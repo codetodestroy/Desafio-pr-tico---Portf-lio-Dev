@@ -37,3 +37,15 @@
 .gray-600 {
     color: var(--gray-600);
 }
+
+.grid {
+    display: grid;
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-24 {
+    gap: 24px ;
+}
