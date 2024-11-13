@@ -1,0 +1,38 @@
+main {
+    margin-block: 72px 144px;
+}
+
+main > div {
+    max-width: 1040px;
+    margin: auto;
+}
+
+.project-card {
+    padding: 12px;
+
+    background-color: var(--gray-300);
+    border: 1.5px solid transparent;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transition: 0.5s;
+
+    img {
+        border-radius: inherit;
+    }
+
+    &:hover {
+        border-color: var(--gray-400);
+    }
+}
+
+.project-card-text {
+    text-align: left;
+
+    h5 {
+        margin-bottom: 8px;
+    }
+}

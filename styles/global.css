@@ -46,9 +46,25 @@ img {
     max-width: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+    font: inherit;
+}
+
 .container {
     max-width: 1040px;
-
-    padding-inline: 163px;
+    
+    /* padding-inline: 163px; */
     margin-inline: auto;
+}
+
+:not(.header) {
+    text-align: center;
+    
+    h3 {
+        margin-bottom: 8px;
+    }
+
+    h4 {
+        margin-bottom: 56px;
+    }
 }
