@@ -1,0 +1,62 @@
+footer {
+    background: url("../assets/images/Background_Contacts.png") no-repeat 100%;
+    background-size: 100%;
+
+    padding-block: 128px 200px;
+}
+
+footer header {
+    margin-bottom: 48px;
+    h4 {
+        margin-bottom: 8px !important;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.links li {
+    background-color: var(--gray-300);
+    width: 400px;
+    height: 68px;
+    border-radius: 8px;
+
+    display: flex;
+
+    position: relative;
+}
+
+.links li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border: 1.5px solid transparent;
+    border-radius: inherit;
+    transition: 0.5s;
+
+    span {
+        display: flex;
+        font-weight: 500;
+        color: var(--gray-500);
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 20px;
+            background: url("../assets/icons/ArrowUpRight.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &:hover {
+        border-color: var(--blue);
+    }
+}
